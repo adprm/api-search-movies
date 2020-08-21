@@ -43,5 +43,7 @@ $('#search-button').on('click', function () {
 });
 
 $('#search-input').on('keyup', function (event) {
-
-})
+    if (event.keyCode === 13) {
+        searchMovie();
+    }
+});
